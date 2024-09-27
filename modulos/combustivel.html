@@ -1,0 +1,19 @@
+<div>
+    <div class="voltar">
+        <button onclick="voltar()">
+            <img src="img/setaesquerda.png" alt="Imagem de uma seta para esquerda">
+        </button>
+    </div>
+    <div class="formulario">
+        <h1>Bem vindo(a)! Saiba seus gastos com combustível.</h1>
+        <form onsubmit="return combustivel(this)">
+            <label>Origem:<input type="text" id="origem" placeholder="Qual o lugar de origem?"></label>
+            <label>Destino:<input type="text" id="destino" placeholder="Qual o destino da viagem?"></label>
+            <label>Distancia<input type="text" id="distancia" placeholder="Qual a distância em KM da viagem?"></label>
+            <label>Km por litro:<input type="text" id="kmporlitro" placeholder="Quantos KM por litro o veículo faz?"></label>
+            <label>Valor do combustível:<input type="text" id="valorgas" placeholder="Qual o valor médio do combustível?"></label>
+            <input type="submit" value="Calcular valor" class="submit">
+        </form>
+    </div>
+    <div class="resultado"></div>
+</div>

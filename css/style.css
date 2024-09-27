@@ -1,0 +1,747 @@
+﻿*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width:100%;
+    height:20vh;
+    color: white;
+    background-color:#44A1A0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid #2B4141 10px;
+}
+.logo{
+    width: 20%;
+    height: 15vh;
+    margin-left: 4vh;
+}
+.logo img{
+    width: 100%;
+    height: auto;
+}
+nav{
+    width: 35%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 4vh;
+}
+.icones{
+    width: 30%;
+    height: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10%;
+}
+.icones img{
+    width: 75%;
+}
+.icones a{
+    margin-left: 3%;
+}
+.pags{
+    width: 100%;
+    height: 30%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.pags span{
+    margin-left: .8vh;
+    margin-right: .8vh;
+}
+.pags span:hover{
+    color: rgb(68, 67, 67);
+    cursor: pointer;
+}
+.pags a{
+    text-decoration: none;
+    color: white;
+}
+.pags a:hover{
+    color: rgb(68, 67, 67);
+    cursor: pointer;
+}
+body{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Pagina Inicial */
+.banner{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+.btnAnterior{
+    width: 10vh;
+    height: 10vh;
+    background-color: black;
+    border-radius: 50%;
+
+    position: absolute;
+    top: calc(50% - 5vh);
+    left: 5vh;
+    opacity: 20%;
+    cursor: pointer;
+}
+.btnProximo{
+    width: 10vh;
+    height: 10vh;
+    background-color: black;
+    border-radius: 50%;
+
+    position: absolute;
+    top: calc(50% - 5vh);
+    right: 5vh;
+    opacity: 20%;
+    cursor: pointer;
+}
+.btnAnterior:hover, .btnProximo:hover{
+    opacity: 50%;
+}
+.info{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#texto{
+    width: 80%;
+    height: 40%;
+    font-size: 5vh;
+    text-align: center;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    color: #486b6b;
+}
+#topicos{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.iconestopicos{
+    width: 18%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1vh;
+    margin-right: 1vh;
+}
+.topicoimg{
+    width: 60%;
+    height: 60%;
+    background-color: #2B4141;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+    border-radius: 50%;
+}
+.topicoimg img{
+    width: 60%;
+    height: 60%;
+}
+.iconestopicos h1{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: 5vh;
+    color: #2B4141;
+}
+.iconestopicos p{
+    width: 80%;
+    height: 20%;
+    text-align: center;
+    font-size: 2vh;
+    text-wrap: balance;
+    color: #E4572E;
+}
+.acessar{
+    width: 100%;
+    height: auto;
+    color: #E4572E;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.acessar span{
+    margin-top: .5vh;
+    margin-bottom: 1vh;
+    margin-right: 10%;
+    font-size: 4vh;
+}
+.acessar span:hover{
+    color: rgb(68, 67, 67);
+    cursor: pointer;
+}
+#areaconhecimento{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.titulo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.titulo h1{
+    width: 25%;
+    height: 1vh;
+    text-align: end;
+    text-wrap: nowrap;
+    color: #44A1A0;
+    margin-right: 3%;
+}
+.titulo hr{
+    width: 60%;
+    border: solid #44A1A0 2px;
+    margin-top: 4vh;
+}
+.blocos{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.materias{
+    width: 25%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1.5vh;
+    margin-right: 1.5vh;
+    border-radius: 10%;
+    background-color: #E4572E;
+}
+.materias img{
+    width: 100%;
+    height: 100%;
+}
+.materias h1{
+    color: white;
+    text-decoration: solid;
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+    margin-left: 2%;
+}
+.materias a{
+    color: white;
+    text-decoration: solid;
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+
+}
+.imgmateria{
+    width: 100%;
+    height: 75%;
+    display: flex;
+}
+.imgmateria img{
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+.txtmateria{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #E4572E;
+    border-radius: 50%;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+}
+/* Pagina de Biologia */
+#celula{
+    width: 100%;
+    height: 80vh;
+    margin-top: 2vh;
+    margin-bottom: 25vh;
+}
+#imgcelula{
+    width: 100%;
+    height: 80%;
+
+    position: relative;
+}
+#corpo-celula{
+    width: 25%;
+    height: auto;
+    position: absolute;
+    top: calc(16.5vh);
+    left: calc(25.5%);
+}
+#centriolos{
+    width: 6.5%;
+    height: auto;
+    position: absolute;
+    top: calc(76%);
+    left: calc(32.8%);
+}
+#golgi{
+    width: 7%;
+    height: auto;
+    position: absolute;
+    top: calc(88%);
+    left: calc(36%);
+}
+#lisossomo1{
+    width: 3.8%;
+    height: auto;
+    position: absolute;
+    top: calc(89%);
+    left: calc(31%);
+}
+#lisossomo2{
+    width: 3%;
+    height: auto;
+    position: absolute;
+    top: calc(60%);
+    left: calc(27%);
+}
+#microtubulos1{
+    width: 2%;
+    height: auto;
+    position: absolute;
+    top: calc(57.5%);
+    left: calc(30.5%);
+}
+#microtubulos2{
+    width: 7.3%;
+    height: auto;
+    position: absolute;
+    top: calc(32%);
+    left: calc(41.8%);
+}
+#microtubulos3{
+    width: 6.3%;
+    height: auto;
+    position: absolute;
+    top: calc(80%);
+    left: calc(38.3%);
+}
+#mitocondrias1{
+    width: 4%;
+    height: auto;
+    position: absolute;
+    top: calc(40%);
+    left: calc(30%);
+}
+#mitocondrias2{
+    width: 3.3%;
+    height: auto;
+    position: absolute;
+    top: calc(70%);
+    left: calc(28.5%);
+}
+#mitocondrias3{
+    width: 4%;
+    height: auto;
+    position: absolute;
+    top: calc(81%);
+    left: calc(43%);
+}
+#nome1{
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: calc(41%);
+    left: calc(8.5%);
+}
+#nome2{
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: calc(81%);
+    left: calc(46.5%);
+}
+#nome3{
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: calc(95%);
+    left: calc(42%);
+}
+#nome4{
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: calc(62%);
+    left: calc(7.3%);
+}
+#nome5{
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: calc(45%);
+    left: calc(48.5%);
+}
+#nome6{
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: calc(83%);
+    left: calc(13%);
+}
+#nome7{
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: calc(53%);
+    left: calc(47%);
+}
+#nome8{
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: calc(66%);
+    left: calc(43%);
+}
+#nucleo{
+    width: 8.8%;
+    height: auto;
+    position: absolute;
+    top: calc(49%);
+    left: calc(36.2%);
+}
+#reticulo1{
+    width: 7.5%;
+    height: auto;
+    position: absolute;
+    top: calc(40%);
+    left: calc(32.8%);
+}
+#reticulo2{
+    width: 7.8%;
+    height: auto;
+    position: absolute;
+    top: calc(50%);
+    left: calc(39.8%);
+}
+#infobiologia{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: 5vh;
+}
+#infobiologia strong{
+    color: #44A1A0;
+}
+#infobiologia p{
+    margin-bottom: 2vh;
+}
+/* Página de geografia */
+#geografia{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#nomeusuario{
+    width: 80%;
+    height: auto;
+    margin-top: 6vh;
+}
+#nomeusuario input{
+    width: 100%;
+    height: 30px;
+    border: solid #44A1A0 2px;
+    border-radius: 10px;
+    padding-left: 2%;
+}
+#quiz{
+    width: 100%;
+    height: auto;
+    margin-top: 5vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.questao{
+    width: 40%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 8vh;
+}
+.questao h2{
+    color: #44A1A0;
+}
+.formgeo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.formgeo p{
+    width: 50%;
+    height: auto;
+    text-wrap: wrap;
+}
+#enviarresposta{
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#enviarresposta input{
+    width: 15%;
+    height: 40px;
+    font-size: large;
+    color: white;
+    background-color: #44A1A0;
+    border: solid 2px #44A1A0;
+    border-radius: 5px;
+}
+#resultado{
+    width: 100%;
+    height: auto;
+    margin-bottom: 5vh;
+}
+#resultado h1{
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    color: #44A1A0;
+}
+#resultado p{
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    color: #44A1A0;
+}
+/* Página Matemática */
+.matematica{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.matematica p{
+    width: 80%;
+    height: auto;
+    text-align: justify;
+    margin-top: 2%;
+}
+#areamat{
+    width: 70%;
+    height: 80vh;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    border: solid 2px black;
+    border-radius: 10px;
+    position: relative;
+}
+#divmat{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B4141;
+}
+.quadradomat{
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #44A1A0;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    border-radius: 20px;
+}
+.quadradomat p{
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+}
+.voltar{
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(2%);
+    left: 1%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.voltar button{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border-style: none;
+    border-radius: 50%;
+    background-color: #2B4141;
+}
+button img{
+    width: 100%;
+    height: auto;
+}
+.voltar button:hover{
+    cursor: pointer;
+}
+.formulario{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formulario h1{
+    width: 100%;
+    height: 5%;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.formulario form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formulario label{
+    width: 80vh;
+    height: 30%;
+    margin-top: 2vh;
+    align-items: center;
+}
+.formulario label input{
+    width: 100%;
+    height: 100%;
+}
+.submit{
+    width: 25vh;
+    height: 4vh;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+.resultado{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.resultado p{
+    text-align: center;
+}
+/* Calculadora imc*/
+
+/* Conversor moedas */
+
+/* Gastos combustível */
+
+/* Sorteador números */
+
+/* Rodapé */
+footer{
+    width:100%;
+    height:20vh;
+    color: white;
+    background-color:#44A1A0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+footer img{
+    width: 18%;
+    height: auto;
+    margin-left: 5%;
+}
+footer .credito{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+footer .media{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+footer .media img{
+    width: 50%;
+    height: auto;
+}
+footer .desenvolvido{
+    text-align: end;
+    font-size: 70%;
+    padding-right: 5%;
+}

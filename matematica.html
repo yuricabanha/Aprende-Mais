@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/combustivel.js"></script>
+        <script type="text/javascript" src="js/conversor.js"></script>
+        <script type="text/javascript" src="js/imc.js"></script>
+        <script type="text/javascript" src="js/sorteador.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <title>Matemática</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo do Aprende Mais">
+            </div>
+            <nav>
+                <div class="icones">
+                    <a href=""><img src="img/search.png" alt="Imagem de pesquisa"></a>
+                    <a href=""><img src="img/user.png" alt="Imagem do úsuario"></a>
+                </div>
+                <div class="pags">
+                    <span><a href="index.html">Início</a></span>
+                    |
+                    <span><a href="#categorias">Categorias</a></span>
+                    |
+                    <span><a href="#areaconhecimento">Áreas de Conhecimento</a></span>
+                    |
+                    <span>Ajuda</span>
+                </div>
+            </nav>
+        </header>
+        <div class="matematica">
+            <div class="titulo">
+                <h1>Matemática</h1>
+                <hr>
+            </div>
+            <p>Nesta área você encontra modelos de calculadora, conversores, sortador de números aleatórios, etc. Fique a vontade para usar da melhore forma cada função!</p>
+            <div id="areamat"> <!--Abrir com servidor(Live Server), não funciona se abrir direto do arquivo -->
+            </div>
+        </div>
+        <footer>
+            <img src="img/logo.png" alt="Logo do Aprende Mais">
+            <div class="credito">
+                <div class="media">
+                    <a href=""><img src="img/fb.png" alt="Ícone do Facebook"></a>
+                    <a href=""><img src="img/instagram.png" alt="Ícone do Instagram"></a>
+                    <a href=""><img src="img/twitter.png" alt="Ícone do Twitter"></a>
+                    <a href=""><img src="img/youtube.png" alt="Ícone do YouTube"></a>
+                </div>
+                <div class="desenvolvido">
+                    <h1>Desenvolvido por IFMS - Campus Dourados</h1>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script type="text/javascript">
+        $("#areamat").load("modulos/area.html");
+    </script>
+</html>

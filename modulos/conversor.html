@@ -1,0 +1,29 @@
+<div>
+    <div class="voltar">
+        <button onclick="voltar()">
+            <img src="img/setaesquerda.png" alt="Imagem de uma seta para esquerda">
+        </button>
+    </div>
+    <div class="formulario">
+        <h1>Bem vindo(a) ao Conversor de Moedas!</h1>
+        <form onsubmit="return converter(this)">
+            <select name="moedaincial">
+				<option disabled selected>Qual a moeda que será convertida?</option>
+				<option id="real1">Real R$</option>
+				<option id="dolar1">Dolar U$</option>
+				<option id="euro1">Euro €</option>
+			</select>
+            <select name="moedafinal">
+				<option disabled selected>Para qual moeda será convertida?</option>
+				<option id="real2">Real R$</option>
+				<option id="dolar2">Dolar U$</option>
+				<option id="euro2">Euro €</option>
+			</select>
+            <label>Valor a ser convertido:<input type="text" id="valorconverter" placeholder="Qual o valor que será convertido"></label>
+            <input type="submit" value="Converter" class="submit">
+        </form>
+    </div>
+    <div class="resultado">
+
+    </div>
+</div>

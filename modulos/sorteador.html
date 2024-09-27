@@ -1,0 +1,19 @@
+<div>
+    <div class="voltar">
+        <button onclick="voltar()">
+            <img src="img/setaesquerda.png" alt="Imagem de uma seta para esquerda">
+        </button>
+    </div>
+    <div class="formulario">
+        <h1>Bem vindo(a) ao Soteador de Números!</h1>
+        <form onsubmit="return sortear(this)">
+            <label>Valor inicial:<input type="text" id="valorinicial" placeholder="Digite o valor inicial dos números a serem sorteados"></label>
+            <label>Valor final:<input type="text" id="valorfinal" placeholder="Digite o valor final a ser sorteado"></label>
+            <label>Quantidade de números:<input type="text" id="qtdnumeros" placeholder="Quantos números devem ser sorteados?"></label>
+            <input type="submit" value="Sortear" class="submit">
+        </form>
+    </div>
+    <div class="resultado">
+
+    </div>
+</div>
